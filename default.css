@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 32px;
+  width:900px;
+  margin: 0 auto;
+}
+nav {
+  float: right;
+  color: #999;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.anvil {
+  width: 100%;
+}
+article {
+  width:50%;
+  float:left;
+  padding-right:5px;
+}
+/* Add media query for smaller viewport size */
+@media (max-width:500px) {
+  nav {
+    float: none;
+  }
+  nav li {
+    display: block;
+  }
+  .anvil {
+    display: none;
+  }
+  article {
+    width:100%;
+  }
+}
