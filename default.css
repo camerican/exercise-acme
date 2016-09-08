@@ -6,18 +6,26 @@ body {
   width:900px;
   margin: 0 auto;
 }
+/** nav area **/
 nav {
   float: right;
   color: #999;
   font-weight:bold;
   text-transform: uppercase;
+  /*border: 2px dotted green;*/
 }
 nav ul {
+  /*border: 2px dotted blue;*/
   list-style-type: none;
 }
 nav li {
   display: inline-block;
   margin-left: 30px;
+  /*border: 3px dotted red;*/
+}
+/** Main area **/
+h2 {
+  color: #999;
 }
 .anvil {
   width: 100%;
@@ -26,19 +34,34 @@ article {
   width:50%;
   float:left;
   padding-right:5px;
+  border: 4px dotted green;
+}
+
+@media (max-width:900px) {
+  body {
+    width: inherit;
+    padding: 0 10px;
+  }
 }
 /* Add media query for smaller viewport size */
-@media (max-width:500px) {
+@media (max-width:776px) {
   nav {
     float: none;
+    padding: 0;
+  }
+  nav ul {
+    padding-left: 0;
+    margin: 0;
   }
   nav li {
     display: block;
+    margin-left: 0;
   }
   .anvil {
     display: none;
   }
   article {
-    width:100%;
+    width: 100%;
+    float: none;
   }
 }
